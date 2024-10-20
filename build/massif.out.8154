@@ -1,0 +1,866 @@
+desc: (none)
+cmd: ./server
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=508373
+mem_heap_B=154910
+mem_heap_extra_B=266
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=1069617
+mem_heap_B=1344619
+mem_heap_extra_B=18853
+mem_stacks_B=0
+heap_tree=peak
+n4: 1344619 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1050624 0x186720: m_clget (user_mbuf.c:254)
+  n1: 1050624 0x18685C: m_getm2 (user_mbuf.c:311)
+   n5: 1050624 0x1149D8: sctp_get_mbuf_for_msg (sctp_bsd_addr.c:772)
+    n1: 262144 0x188AE1: recv_function_raw (user_recv_thread.c:317)
+     n1: 262144 0x4887608: start_thread (pthread_create.c:477)
+      n0: 262144 0x49C1352: clone (clone.S:95)
+    n1: 262144 0x189192: recv_function_raw6 (user_recv_thread.c:504)
+     n1: 262144 0x4887608: start_thread (pthread_create.c:477)
+      n0: 262144 0x49C1352: clone (clone.S:95)
+    n1: 262144 0x1898B5: recv_function_udp (user_recv_thread.c:702)
+     n1: 262144 0x4887608: start_thread (pthread_create.c:477)
+      n0: 262144 0x49C1352: clone (clone.S:95)
+    n1: 262144 0x189FC0: recv_function_udp6 (user_recv_thread.c:913)
+     n1: 262144 0x4887608: start_thread (pthread_create.c:477)
+      n0: 262144 0x49C1352: clone (clone.S:95)
+    n0: 2048 in 1 place, below massif's threshold (1.00%)
+ n2: 149920 0x1842EF: sctp_hashinit_flags (sctputil.c:7409)
+  n1: 131072 0x154E61: sctp_pcb_init (sctp_pcb.c:6621)
+   n1: 131072 0x15DD36: sctp_init (sctp_usrreq.c:141)
+    n1: 131072 0x10D4FE: usrsctp_init (user_socket.c:112)
+     n0: 131072 0x10BB35: main (in /home/ndp/Documents/test_usrsctp/build/server)
+  n0: 18848 in 7 places, all below massif's threshold (1.00%)
+ n2: 131840 0x186522: m_gethdr (user_mbuf.c:162)
+  n1: 131328 0x186847: m_getm2 (user_mbuf.c:310)
+   n5: 131328 0x1149D8: sctp_get_mbuf_for_msg (sctp_bsd_addr.c:772)
+    n1: 32768 0x188AE1: recv_function_raw (user_recv_thread.c:317)
+     n1: 32768 0x4887608: start_thread (pthread_create.c:477)
+      n0: 32768 0x49C1352: clone (clone.S:95)
+    n1: 32768 0x189192: recv_function_raw6 (user_recv_thread.c:504)
+     n1: 32768 0x4887608: start_thread (pthread_create.c:477)
+      n0: 32768 0x49C1352: clone (clone.S:95)
+    n1: 32768 0x1898B5: recv_function_udp (user_recv_thread.c:702)
+     n1: 32768 0x4887608: start_thread (pthread_create.c:477)
+      n0: 32768 0x49C1352: clone (clone.S:95)
+    n1: 32768 0x189FC0: recv_function_udp6 (user_recv_thread.c:913)
+     n1: 32768 0x4887608: start_thread (pthread_create.c:477)
+      n0: 32768 0x49C1352: clone (clone.S:95)
+    n0: 256 in 1 place, below massif's threshold (1.00%)
+  n0: 512 in 2 places, all below massif's threshold (1.00%)
+ n0: 12235 in 20 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=3
+#-----------
+time=1365146
+mem_heap_B=1348773
+mem_heap_extra_B=19171
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=1758715
+mem_heap_B=1347653
+mem_heap_extra_B=19091
+mem_stacks_B=0
+heap_tree=detailed
+n4: 1347653 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1048576 0x186720: m_clget (user_mbuf.c:254)
+  n1: 1048576 0x18685C: m_getm2 (user_mbuf.c:311)
+   n5: 1048576 0x1149D8: sctp_get_mbuf_for_msg (sctp_bsd_addr.c:772)
+    n1: 262144 0x188AE1: recv_function_raw (user_recv_thread.c:317)
+     n1: 262144 0x4887608: start_thread (pthread_create.c:477)
+      n0: 262144 0x49C1352: clone (clone.S:95)
+    n1: 262144 0x189192: recv_function_raw6 (user_recv_thread.c:504)
+     n1: 262144 0x4887608: start_thread (pthread_create.c:477)
+      n0: 262144 0x49C1352: clone (clone.S:95)
+    n1: 262144 0x1898B5: recv_function_udp (user_recv_thread.c:702)
+     n1: 262144 0x4887608: start_thread (pthread_create.c:477)
+      n0: 262144 0x49C1352: clone (clone.S:95)
+    n1: 262144 0x189FC0: recv_function_udp6 (user_recv_thread.c:913)
+     n1: 262144 0x4887608: start_thread (pthread_create.c:477)
+      n0: 262144 0x49C1352: clone (clone.S:95)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 149920 0x1842EF: sctp_hashinit_flags (sctputil.c:7409)
+  n1: 131072 0x154E61: sctp_pcb_init (sctp_pcb.c:6621)
+   n1: 131072 0x15DD36: sctp_init (sctp_usrreq.c:141)
+    n1: 131072 0x10D4FE: usrsctp_init (user_socket.c:112)
+     n0: 131072 0x10BB35: main (in /home/ndp/Documents/test_usrsctp/build/server)
+  n0: 18848 in 7 places, all below massif's threshold (1.00%)
+ n2: 131072 0x186522: m_gethdr (user_mbuf.c:162)
+  n1: 131072 0x186847: m_getm2 (user_mbuf.c:310)
+   n5: 131072 0x1149D8: sctp_get_mbuf_for_msg (sctp_bsd_addr.c:772)
+    n1: 32768 0x188AE1: recv_function_raw (user_recv_thread.c:317)
+     n1: 32768 0x4887608: start_thread (pthread_create.c:477)
+      n0: 32768 0x49C1352: clone (clone.S:95)
+    n1: 32768 0x189192: recv_function_raw6 (user_recv_thread.c:504)
+     n1: 32768 0x4887608: start_thread (pthread_create.c:477)
+      n0: 32768 0x49C1352: clone (clone.S:95)
+    n1: 32768 0x1898B5: recv_function_udp (user_recv_thread.c:702)
+     n1: 32768 0x4887608: start_thread (pthread_create.c:477)
+      n0: 32768 0x49C1352: clone (clone.S:95)
+    n1: 32768 0x189FC0: recv_function_udp6 (user_recv_thread.c:913)
+     n1: 32768 0x4887608: start_thread (pthread_create.c:477)
+      n0: 32768 0x49C1352: clone (clone.S:95)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 3 places, all below massif's threshold (1.00%)
+ n0: 18085 in 32 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=5
+#-----------
+time=2078697
+mem_heap_B=1345349
+mem_heap_extra_B=19075
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=2613065
+mem_heap_B=1345349
+mem_heap_extra_B=19075
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=3093216
+mem_heap_B=1347653
+mem_heap_extra_B=19091
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=3494255
+mem_heap_B=1347653
+mem_heap_extra_B=19091
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=3980135
+mem_heap_B=1347653
+mem_heap_extra_B=19091
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=4255518
+mem_heap_B=1347653
+mem_heap_extra_B=19091
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=4806765
+mem_heap_B=1347653
+mem_heap_extra_B=19091
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=5224794
+mem_heap_B=1347653
+mem_heap_extra_B=19091
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=5776204
+mem_heap_B=1347653
+mem_heap_extra_B=19091
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=6309139
+mem_heap_B=1347397
+mem_heap_extra_B=19083
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=6795511
+mem_heap_B=1347653
+mem_heap_extra_B=19091
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=7184305
+mem_heap_B=1347397
+mem_heap_extra_B=19083
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=7459788
+mem_heap_B=1347397
+mem_heap_extra_B=19083
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=8010738
+mem_heap_B=1347549
+mem_heap_extra_B=19099
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=8286278
+mem_heap_B=1347397
+mem_heap_extra_B=19083
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=8789808
+mem_heap_B=1347653
+mem_heap_extra_B=19091
+mem_stacks_B=0
+heap_tree=detailed
+n4: 1347653 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1048576 0x186720: m_clget (user_mbuf.c:254)
+  n1: 1048576 0x18685C: m_getm2 (user_mbuf.c:311)
+   n5: 1048576 0x1149D8: sctp_get_mbuf_for_msg (sctp_bsd_addr.c:772)
+    n1: 262144 0x188AE1: recv_function_raw (user_recv_thread.c:317)
+     n1: 262144 0x4887608: start_thread (pthread_create.c:477)
+      n0: 262144 0x49C1352: clone (clone.S:95)
+    n1: 262144 0x189192: recv_function_raw6 (user_recv_thread.c:504)
+     n1: 262144 0x4887608: start_thread (pthread_create.c:477)
+      n0: 262144 0x49C1352: clone (clone.S:95)
+    n1: 262144 0x1898B5: recv_function_udp (user_recv_thread.c:702)
+     n1: 262144 0x4887608: start_thread (pthread_create.c:477)
+      n0: 262144 0x49C1352: clone (clone.S:95)
+    n1: 262144 0x189FC0: recv_function_udp6 (user_recv_thread.c:913)
+     n1: 262144 0x4887608: start_thread (pthread_create.c:477)
+      n0: 262144 0x49C1352: clone (clone.S:95)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 149920 0x1842EF: sctp_hashinit_flags (sctputil.c:7409)
+  n1: 131072 0x154E61: sctp_pcb_init (sctp_pcb.c:6621)
+   n1: 131072 0x15DD36: sctp_init (sctp_usrreq.c:141)
+    n1: 131072 0x10D4FE: usrsctp_init (user_socket.c:112)
+     n0: 131072 0x10BB35: main (in /home/ndp/Documents/test_usrsctp/build/server)
+  n0: 18848 in 7 places, all below massif's threshold (1.00%)
+ n2: 131072 0x186522: m_gethdr (user_mbuf.c:162)
+  n1: 131072 0x186847: m_getm2 (user_mbuf.c:310)
+   n5: 131072 0x1149D8: sctp_get_mbuf_for_msg (sctp_bsd_addr.c:772)
+    n1: 32768 0x188AE1: recv_function_raw (user_recv_thread.c:317)
+     n1: 32768 0x4887608: start_thread (pthread_create.c:477)
+      n0: 32768 0x49C1352: clone (clone.S:95)
+    n1: 32768 0x189192: recv_function_raw6 (user_recv_thread.c:504)
+     n1: 32768 0x4887608: start_thread (pthread_create.c:477)
+      n0: 32768 0x49C1352: clone (clone.S:95)
+    n1: 32768 0x1898B5: recv_function_udp (user_recv_thread.c:702)
+     n1: 32768 0x4887608: start_thread (pthread_create.c:477)
+      n0: 32768 0x49C1352: clone (clone.S:95)
+    n1: 32768 0x189FC0: recv_function_udp6 (user_recv_thread.c:913)
+     n1: 32768 0x4887608: start_thread (pthread_create.c:477)
+      n0: 32768 0x49C1352: clone (clone.S:95)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 3 places, all below massif's threshold (1.00%)
+ n0: 18085 in 32 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=21
+#-----------
+time=9160809
+mem_heap_B=1347653
+mem_heap_extra_B=19091
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=9712164
+mem_heap_B=1347653
+mem_heap_extra_B=19091
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=10263298
+mem_heap_B=1347653
+mem_heap_extra_B=19091
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=10630415
+mem_heap_B=1347549
+mem_heap_extra_B=19099
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=11143030
+mem_heap_B=1347653
+mem_heap_extra_B=19091
+mem_stacks_B=0
+heap_tree=detailed
+n4: 1347653 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1048576 0x186720: m_clget (user_mbuf.c:254)
+  n1: 1048576 0x18685C: m_getm2 (user_mbuf.c:311)
+   n5: 1048576 0x1149D8: sctp_get_mbuf_for_msg (sctp_bsd_addr.c:772)
+    n1: 262144 0x188AE1: recv_function_raw (user_recv_thread.c:317)
+     n1: 262144 0x4887608: start_thread (pthread_create.c:477)
+      n0: 262144 0x49C1352: clone (clone.S:95)
+    n1: 262144 0x189192: recv_function_raw6 (user_recv_thread.c:504)
+     n1: 262144 0x4887608: start_thread (pthread_create.c:477)
+      n0: 262144 0x49C1352: clone (clone.S:95)
+    n1: 262144 0x1898B5: recv_function_udp (user_recv_thread.c:702)
+     n1: 262144 0x4887608: start_thread (pthread_create.c:477)
+      n0: 262144 0x49C1352: clone (clone.S:95)
+    n1: 262144 0x189FC0: recv_function_udp6 (user_recv_thread.c:913)
+     n1: 262144 0x4887608: start_thread (pthread_create.c:477)
+      n0: 262144 0x49C1352: clone (clone.S:95)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 149920 0x1842EF: sctp_hashinit_flags (sctputil.c:7409)
+  n1: 131072 0x154E61: sctp_pcb_init (sctp_pcb.c:6621)
+   n1: 131072 0x15DD36: sctp_init (sctp_usrreq.c:141)
+    n1: 131072 0x10D4FE: usrsctp_init (user_socket.c:112)
+     n0: 131072 0x10BB35: main (in /home/ndp/Documents/test_usrsctp/build/server)
+  n0: 18848 in 7 places, all below massif's threshold (1.00%)
+ n2: 131072 0x186522: m_gethdr (user_mbuf.c:162)
+  n1: 131072 0x186847: m_getm2 (user_mbuf.c:310)
+   n5: 131072 0x1149D8: sctp_get_mbuf_for_msg (sctp_bsd_addr.c:772)
+    n1: 32768 0x188AE1: recv_function_raw (user_recv_thread.c:317)
+     n1: 32768 0x4887608: start_thread (pthread_create.c:477)
+      n0: 32768 0x49C1352: clone (clone.S:95)
+    n1: 32768 0x189192: recv_function_raw6 (user_recv_thread.c:504)
+     n1: 32768 0x4887608: start_thread (pthread_create.c:477)
+      n0: 32768 0x49C1352: clone (clone.S:95)
+    n1: 32768 0x1898B5: recv_function_udp (user_recv_thread.c:702)
+     n1: 32768 0x4887608: start_thread (pthread_create.c:477)
+      n0: 32768 0x49C1352: clone (clone.S:95)
+    n1: 32768 0x189FC0: recv_function_udp6 (user_recv_thread.c:913)
+     n1: 32768 0x4887608: start_thread (pthread_create.c:477)
+      n0: 32768 0x49C1352: clone (clone.S:95)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 3 places, all below massif's threshold (1.00%)
+ n0: 18085 in 32 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=26
+#-----------
+time=11694553
+mem_heap_B=1347653
+mem_heap_extra_B=19091
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=11970425
+mem_heap_B=1347653
+mem_heap_extra_B=19091
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=12347724
+mem_heap_B=1347549
+mem_heap_extra_B=19099
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=12882788
+mem_heap_B=1347653
+mem_heap_extra_B=19091
+mem_stacks_B=0
+heap_tree=detailed
+n4: 1347653 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1048576 0x186720: m_clget (user_mbuf.c:254)
+  n1: 1048576 0x18685C: m_getm2 (user_mbuf.c:311)
+   n5: 1048576 0x1149D8: sctp_get_mbuf_for_msg (sctp_bsd_addr.c:772)
+    n1: 262144 0x188AE1: recv_function_raw (user_recv_thread.c:317)
+     n1: 262144 0x4887608: start_thread (pthread_create.c:477)
+      n0: 262144 0x49C1352: clone (clone.S:95)
+    n1: 262144 0x189192: recv_function_raw6 (user_recv_thread.c:504)
+     n1: 262144 0x4887608: start_thread (pthread_create.c:477)
+      n0: 262144 0x49C1352: clone (clone.S:95)
+    n1: 262144 0x1898B5: recv_function_udp (user_recv_thread.c:702)
+     n1: 262144 0x4887608: start_thread (pthread_create.c:477)
+      n0: 262144 0x49C1352: clone (clone.S:95)
+    n1: 262144 0x189FC0: recv_function_udp6 (user_recv_thread.c:913)
+     n1: 262144 0x4887608: start_thread (pthread_create.c:477)
+      n0: 262144 0x49C1352: clone (clone.S:95)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 149920 0x1842EF: sctp_hashinit_flags (sctputil.c:7409)
+  n1: 131072 0x154E61: sctp_pcb_init (sctp_pcb.c:6621)
+   n1: 131072 0x15DD36: sctp_init (sctp_usrreq.c:141)
+    n1: 131072 0x10D4FE: usrsctp_init (user_socket.c:112)
+     n0: 131072 0x10BB35: main (in /home/ndp/Documents/test_usrsctp/build/server)
+  n0: 18848 in 7 places, all below massif's threshold (1.00%)
+ n2: 131072 0x186522: m_gethdr (user_mbuf.c:162)
+  n1: 131072 0x186847: m_getm2 (user_mbuf.c:310)
+   n5: 131072 0x1149D8: sctp_get_mbuf_for_msg (sctp_bsd_addr.c:772)
+    n1: 32768 0x188AE1: recv_function_raw (user_recv_thread.c:317)
+     n1: 32768 0x4887608: start_thread (pthread_create.c:477)
+      n0: 32768 0x49C1352: clone (clone.S:95)
+    n1: 32768 0x189192: recv_function_raw6 (user_recv_thread.c:504)
+     n1: 32768 0x4887608: start_thread (pthread_create.c:477)
+      n0: 32768 0x49C1352: clone (clone.S:95)
+    n1: 32768 0x1898B5: recv_function_udp (user_recv_thread.c:702)
+     n1: 32768 0x4887608: start_thread (pthread_create.c:477)
+      n0: 32768 0x49C1352: clone (clone.S:95)
+    n1: 32768 0x189FC0: recv_function_udp6 (user_recv_thread.c:913)
+     n1: 32768 0x4887608: start_thread (pthread_create.c:477)
+      n0: 32768 0x49C1352: clone (clone.S:95)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 3 places, all below massif's threshold (1.00%)
+ n0: 18085 in 32 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=30
+#-----------
+time=13434135
+mem_heap_B=1347653
+mem_heap_extra_B=19091
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=13985490
+mem_heap_B=1347653
+mem_heap_extra_B=19091
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=14385242
+mem_heap_B=1347549
+mem_heap_extra_B=19099
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=14897812
+mem_heap_B=1347653
+mem_heap_extra_B=19091
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=15449200
+mem_heap_B=1347653
+mem_heap_extra_B=19091
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=16003054
+mem_heap_B=1347653
+mem_heap_extra_B=19091
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=16605449
+mem_heap_B=1347653
+mem_heap_extra_B=19091
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=17156415
+mem_heap_B=1347653
+mem_heap_extra_B=19091
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=17795073
+mem_heap_B=1347653
+mem_heap_extra_B=19091
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=18344714
+mem_heap_B=1347653
+mem_heap_extra_B=19091
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=18896069
+mem_heap_B=1347653
+mem_heap_extra_B=19091
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=19447424
+mem_heap_B=1347653
+mem_heap_extra_B=19091
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=19776032
+mem_heap_B=1347653
+mem_heap_extra_B=19091
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=20326990
+mem_heap_B=1347653
+mem_heap_extra_B=19091
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=20877956
+mem_heap_B=1347653
+mem_heap_extra_B=19091
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=21416293
+mem_heap_B=1347653
+mem_heap_extra_B=19091
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=22066742
+mem_heap_B=1347653
+mem_heap_extra_B=19091
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=22617700
+mem_heap_B=1347653
+mem_heap_extra_B=19091
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=23248966
+mem_heap_B=1347549
+mem_heap_extra_B=19099
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=23805738
+mem_heap_B=1347653
+mem_heap_extra_B=19091
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=24081221
+mem_heap_B=1347653
+mem_heap_extra_B=19091
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=24357134
+mem_heap_B=1347653
+mem_heap_extra_B=19091
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=24632609
+mem_heap_B=1347653
+mem_heap_extra_B=19091
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=24919061
+mem_heap_B=1347653
+mem_heap_extra_B=19091
+mem_stacks_B=0
+heap_tree=detailed
+n4: 1347653 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1048576 0x186720: m_clget (user_mbuf.c:254)
+  n1: 1048576 0x18685C: m_getm2 (user_mbuf.c:311)
+   n5: 1048576 0x1149D8: sctp_get_mbuf_for_msg (sctp_bsd_addr.c:772)
+    n1: 262144 0x188AE1: recv_function_raw (user_recv_thread.c:317)
+     n1: 262144 0x4887608: start_thread (pthread_create.c:477)
+      n0: 262144 0x49C1352: clone (clone.S:95)
+    n1: 262144 0x189192: recv_function_raw6 (user_recv_thread.c:504)
+     n1: 262144 0x4887608: start_thread (pthread_create.c:477)
+      n0: 262144 0x49C1352: clone (clone.S:95)
+    n1: 262144 0x1898B5: recv_function_udp (user_recv_thread.c:702)
+     n1: 262144 0x4887608: start_thread (pthread_create.c:477)
+      n0: 262144 0x49C1352: clone (clone.S:95)
+    n1: 262144 0x189FC0: recv_function_udp6 (user_recv_thread.c:913)
+     n1: 262144 0x4887608: start_thread (pthread_create.c:477)
+      n0: 262144 0x49C1352: clone (clone.S:95)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 149920 0x1842EF: sctp_hashinit_flags (sctputil.c:7409)
+  n1: 131072 0x154E61: sctp_pcb_init (sctp_pcb.c:6621)
+   n1: 131072 0x15DD36: sctp_init (sctp_usrreq.c:141)
+    n1: 131072 0x10D4FE: usrsctp_init (user_socket.c:112)
+     n0: 131072 0x10BB35: main (in /home/ndp/Documents/test_usrsctp/build/server)
+  n0: 18848 in 7 places, all below massif's threshold (1.00%)
+ n2: 131072 0x186522: m_gethdr (user_mbuf.c:162)
+  n1: 131072 0x186847: m_getm2 (user_mbuf.c:310)
+   n5: 131072 0x1149D8: sctp_get_mbuf_for_msg (sctp_bsd_addr.c:772)
+    n1: 32768 0x188AE1: recv_function_raw (user_recv_thread.c:317)
+     n1: 32768 0x4887608: start_thread (pthread_create.c:477)
+      n0: 32768 0x49C1352: clone (clone.S:95)
+    n1: 32768 0x189192: recv_function_raw6 (user_recv_thread.c:504)
+     n1: 32768 0x4887608: start_thread (pthread_create.c:477)
+      n0: 32768 0x49C1352: clone (clone.S:95)
+    n1: 32768 0x1898B5: recv_function_udp (user_recv_thread.c:702)
+     n1: 32768 0x4887608: start_thread (pthread_create.c:477)
+      n0: 32768 0x49C1352: clone (clone.S:95)
+    n1: 32768 0x189FC0: recv_function_udp6 (user_recv_thread.c:913)
+     n1: 32768 0x4887608: start_thread (pthread_create.c:477)
+      n0: 32768 0x49C1352: clone (clone.S:95)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 3 places, all below massif's threshold (1.00%)
+ n0: 18085 in 32 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=54
+#-----------
+time=25234742
+mem_heap_B=1347653
+mem_heap_extra_B=19091
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=25510950
+mem_heap_B=1347653
+mem_heap_extra_B=19091
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=25786433
+mem_heap_B=1347653
+mem_heap_extra_B=19091
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=26061916
+mem_heap_B=1347653
+mem_heap_extra_B=19091
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=26337399
+mem_heap_B=1347653
+mem_heap_extra_B=19091
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=26613312
+mem_heap_B=1347653
+mem_heap_extra_B=19091
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=26954343
+mem_heap_B=1347653
+mem_heap_extra_B=19091
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=27250039
+mem_heap_B=1347653
+mem_heap_extra_B=19091
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=27525911
+mem_heap_B=1347653
+mem_heap_extra_B=19091
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=63
+#-----------
+time=27801394
+mem_heap_B=1347653
+mem_heap_extra_B=19091
+mem_stacks_B=0
+heap_tree=detailed
+n4: 1347653 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1048576 0x186720: m_clget (user_mbuf.c:254)
+  n1: 1048576 0x18685C: m_getm2 (user_mbuf.c:311)
+   n5: 1048576 0x1149D8: sctp_get_mbuf_for_msg (sctp_bsd_addr.c:772)
+    n1: 262144 0x188AE1: recv_function_raw (user_recv_thread.c:317)
+     n1: 262144 0x4887608: start_thread (pthread_create.c:477)
+      n0: 262144 0x49C1352: clone (clone.S:95)
+    n1: 262144 0x189192: recv_function_raw6 (user_recv_thread.c:504)
+     n1: 262144 0x4887608: start_thread (pthread_create.c:477)
+      n0: 262144 0x49C1352: clone (clone.S:95)
+    n1: 262144 0x1898B5: recv_function_udp (user_recv_thread.c:702)
+     n1: 262144 0x4887608: start_thread (pthread_create.c:477)
+      n0: 262144 0x49C1352: clone (clone.S:95)
+    n1: 262144 0x189FC0: recv_function_udp6 (user_recv_thread.c:913)
+     n1: 262144 0x4887608: start_thread (pthread_create.c:477)
+      n0: 262144 0x49C1352: clone (clone.S:95)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 149920 0x1842EF: sctp_hashinit_flags (sctputil.c:7409)
+  n1: 131072 0x154E61: sctp_pcb_init (sctp_pcb.c:6621)
+   n1: 131072 0x15DD36: sctp_init (sctp_usrreq.c:141)
+    n1: 131072 0x10D4FE: usrsctp_init (user_socket.c:112)
+     n0: 131072 0x10BB35: main (in /home/ndp/Documents/test_usrsctp/build/server)
+  n0: 18848 in 7 places, all below massif's threshold (1.00%)
+ n2: 131072 0x186522: m_gethdr (user_mbuf.c:162)
+  n1: 131072 0x186847: m_getm2 (user_mbuf.c:310)
+   n5: 131072 0x1149D8: sctp_get_mbuf_for_msg (sctp_bsd_addr.c:772)
+    n1: 32768 0x188AE1: recv_function_raw (user_recv_thread.c:317)
+     n1: 32768 0x4887608: start_thread (pthread_create.c:477)
+      n0: 32768 0x49C1352: clone (clone.S:95)
+    n1: 32768 0x189192: recv_function_raw6 (user_recv_thread.c:504)
+     n1: 32768 0x4887608: start_thread (pthread_create.c:477)
+      n0: 32768 0x49C1352: clone (clone.S:95)
+    n1: 32768 0x1898B5: recv_function_udp (user_recv_thread.c:702)
+     n1: 32768 0x4887608: start_thread (pthread_create.c:477)
+      n0: 32768 0x49C1352: clone (clone.S:95)
+    n1: 32768 0x189FC0: recv_function_udp6 (user_recv_thread.c:913)
+     n1: 32768 0x4887608: start_thread (pthread_create.c:477)
+      n0: 32768 0x49C1352: clone (clone.S:95)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 3 places, all below massif's threshold (1.00%)
+ n0: 18085 in 32 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=64
+#-----------
+time=28076877
+mem_heap_B=1347653
+mem_heap_extra_B=19091
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=28352360
+mem_heap_B=1347653
+mem_heap_extra_B=19091
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=66
+#-----------
+time=28639567
+mem_heap_B=1347653
+mem_heap_extra_B=19091
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=67
+#-----------
+time=28956736
+mem_heap_B=1347653
+mem_heap_extra_B=19091
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=68
+#-----------
+time=29232379
+mem_heap_B=1347653
+mem_heap_extra_B=19091
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=69
+#-----------
+time=29507862
+mem_heap_B=1347653
+mem_heap_extra_B=19091
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=70
+#-----------
+time=29783329
+mem_heap_B=1345345
+mem_heap_extra_B=19055
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=71
+#-----------
+time=30058919
+mem_heap_B=1347653
+mem_heap_extra_B=19091
+mem_stacks_B=0
+heap_tree=empty

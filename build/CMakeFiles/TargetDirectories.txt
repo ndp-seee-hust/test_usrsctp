@@ -1,0 +1,4 @@
+/home/ndp/Documents/test_usrsctp/build/CMakeFiles/rebuild_cache.dir
+/home/ndp/Documents/test_usrsctp/build/CMakeFiles/edit_cache.dir
+/home/ndp/Documents/test_usrsctp/build/CMakeFiles/client.dir
+/home/ndp/Documents/test_usrsctp/build/CMakeFiles/server.dir

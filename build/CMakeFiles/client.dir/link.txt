@@ -1,0 +1,1 @@
+/usr/bin/cc    CMakeFiles/client.dir/test/client.c.o CMakeFiles/client.dir/usrsctplib/programs_helper.c.o  -o client  ../usrsctplib/libusrsctp.a -lpthread 
