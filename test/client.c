@@ -13,6 +13,7 @@
 #endif
 #include <usrsctp.h>
 #include "programs_helper.h"
+#include <time.h>
 
 int done = 0;
 const char *REMOTE_ADDR = "127.0.0.1";
@@ -20,6 +21,7 @@ const char *REMOTE_ADDR = "127.0.0.1";
 #define LOCAL_PORT 0
 #define LOCAL_ENCAPS_PORT 22222
 #define REMOTE_ENCAPS_PORT 11111
+#define BUFFER_SIZE 1024
 
 const int use_udpencaps = 0;
 
@@ -61,9 +63,15 @@ int main()
 	uint16_t event_types[] = {SCTP_ASSOC_CHANGE,
 	                          SCTP_PEER_ADDR_CHANGE,
 	                          SCTP_SEND_FAILED_EVENT};
-	char buffer[80];
+	char send_buffer[BUFFER_SIZE];
+	char recv_buffer[BUFFER_SIZE];
+
 	unsigned int i;
 	int n;
+
+	struct timespec start, end;
+	double latency;
+
 
 	if (use_udpencaps) 
 	{
@@ -235,22 +243,22 @@ int main()
 		usrsctp_freepaddrs(addrs);
 	}
 
-	// while ((fgets(buffer, sizeof(buffer), stdin) != NULL) && !done)
+	// while ((fgets(send_buffer, sizeof(send_buffer), stdin) != NULL) && !done)
 	// {
-	// 	usrsctp_sendv(sock, buffer, strlen(buffer), NULL, 0, NULL, 0, SCTP_SENDV_NOINFO, 0);
+	// 	usrsctp_sendv(sock, send_buffer, strlen(send_buffer), NULL, 0, NULL, 0, SCTP_SENDV_NOINFO, 0);
 	// }
 
 	for (int i = 1; i <= 50; i++) 
 	{
-    snprintf(buffer, sizeof(buffer), "hello, how are you %d", i);
-    if (usrsctp_sendv(sock, buffer, strlen(buffer), NULL, 0, NULL, 0, SCTP_SENDV_NOINFO, 0) < 0) 
-    {
-        perror("usrsctp_sendv");
-        break; 
-    }
-    printf("Sent: %s\n", buffer); 
+		snprintf(send_buffer, sizeof(send_buffer), "hello, how are you %d", i);
+		if (usrsctp_sendv(sock, send_buffer, strlen(send_buffer), NULL, 0, NULL, 0, SCTP_SENDV_NOINFO, 0) < 0) 
+		{
+			perror("usrsctp_sendv");
+			break; 
+		}
+		printf("Sent: %s\n", send_buffer); 
+		sleep(1); 
 
-	sleep(1); 
 	}
 
 	if (!done) 
